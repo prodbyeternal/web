@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="56.648384mm"
+   height="54.117458mm"
+   viewBox="0 0 56.648384 54.117458"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="star.svg"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.9790123"
+     inkscape:cx="107.41815"
+     inkscape:cy="68.646913"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.529384,-142.28468)">
+    <path
+       id="path1"
+       style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill"
+       inkscape:transform-center-y="-2.581444"
+       d="m 70.03358,142.78466 c -0.278619,-0.002 7.691173,19.00526 7.467212,18.8395 -0.223961,-0.16576 20.282904,1.9029 20.199147,1.63716 -0.08376,-0.26574 -15.698368,13.18769 -15.609929,12.92346 0.08844,-0.26422 4.457992,19.87822 4.684847,19.71644 0.226854,-0.16177 -17.393298,-10.85481 -17.114679,-10.85235 0.278619,0.002 -17.527713,10.38251 -17.303753,10.54827 0.223961,0.16576 4.94872,-19.89633 5.032477,-19.63059 0.08376,0.26574 -15.290715,-13.46147 -15.379154,-13.19725 -0.08844,0.26422 20.451774,-1.44179 20.22492,-1.28002 -0.226855,0.16178 8.077532,-18.70216 7.798912,-18.70462 z" />
+  </g>
+</svg>
