@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2f3136;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 350px;
+    background-color: #36393f;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    background-image: url(jonathan.png);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.status-indicator {
+    width: 15px;
+    height: 15px;
+    background-color: #3ba55d;
+    border-radius: 50%;
+    border: 3px solid #36393f;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.username h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.app-tag {
+    background-color: #5865f2;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.user-id {
+    font-size: 0.9em;
+    color: #b9bbbe;
+    margin: 5px 0;
+}
+
+.icon {
+    color: #57f287;
+    font-family: monospace;
+}
+
+.mutual-servers {
+    font-size: 0.9em;
+    color: #b9bbbe;
+    margin-bottom: 10px;
+}
+
+.add-app {
+    width: 100%;
+    padding: 8px 0;
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #b9bbbe;
+    margin-bottom: 15px;
+}
+
+.description a {
+    color: #57f287;
+    text-decoration: none;
+}
+
+.listening {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.song {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.role {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: #000;
+    display: inline-block;
+}
+
+.add-role {
+    width: 25px;
+    height: 25px;
+    background-color: #5865f2;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-button {
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.settings-icon {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+.python-logo {
+    width: 13px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 3px;
+}
