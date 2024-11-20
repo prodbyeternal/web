@@ -36,7 +36,7 @@ body {
 .status-indicator {
     width: 15px;
     height: 15px;
-    background-color: #3ba55d;
+    background-color: #3ba55d; /* Online status */
     border-radius: 50%;
     border: 3px solid #36393f;
     position: absolute;
@@ -164,7 +164,7 @@ body {
 .settings-icon {
     width: 20px;
     height: 20px;
-    background-color: gray;
+    background-color: gray; /* Placeholder for icon */
     border-radius: 50%;
 }
 .python-logo {
@@ -172,4 +172,23 @@ body {
     height: 16px;
     vertical-align: middle;
     margin-left: 3px;
+}
+.add-app {
+    display: block; /* Ensures the element takes up the full width */
+    text-align: center;
+    width: 100%; /* Stretches to fill the container */
+    padding: 10px 0; /* Adds more padding for better appearance */
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-app:hover {
+    background-color: #4752c4; /* Slightly darker color on hover */
 }
