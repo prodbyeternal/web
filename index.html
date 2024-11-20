@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>eternal</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script
+            src="https://kit.fontawesome.com/5d83f25ef6.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/boot.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-mocks/1.5.8/angular-mocks.min.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            .social-links {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            }
+            .social-links li {
+                font-size: 24px;
+                color: white;
+            }
+            .social-links a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                font-size: 20px;
+            }
+            .social-links a:hover {
+                color: #1db954; /* For Spotify */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <!---https://dropmefiles.com/aPJlJ font link--->
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            $(document).ready(function () {
+                $("ul.tabs li").click(function () {
+                    var tab_id = $(this).attr("data-tab");
+
+                    $("ul.tabs li").removeClass("current");
+                    $(".tab-content").removeClass("current");
+
+                    $(this).addClass("current");
+                    $("#" + tab_id).addClass("current");
+                });
+            });
+        </script>
+
+        <div id="menu">
+            <div class="line"></div>
+
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">
+                        <i class="fas fa-home"></i>
+                    </li>
+                    <li class="tab-link" data-tab="tab-2">
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <li class="tab-link" data-tab="tab-3">
+                        <i class="fas fa-bolt"></i>
+                    </li>
+                    <li class="tab-link" data-tab="tab-4">
+                        <i class="fas fa-music"></i>
+                    </li>
+                    <li class="tab-link" data-tab="tab-5">
+                        <i class="fas fa-home"></i>
+                    </li>
+                    <li class="tab-link" data-tab="tab-6">
+                        <i class="fas fa-user"></i>
+                    </li>
+                </ul>
+
+                <div id="tab-1" class="tab-content current">
+                    <div id="name-container">
+                        <div class="name">eternal</div>
+                        <div class="name">starblazing</div>
+                        <div class="name">can't even</div>
+                    </div>
+
+                    <div id="about-me">
+                        <h2>about</h2>
+                        <p>
+                            hi! my name is eternal, i'm a producer and hobby
+                            programmer.
+                        </p>
+                        <p>my favourite programming language is python.</p>
+                        <p>my favourite game franchise is half-life</p>
+                    </div>
+                </div>
+
+                <div id="tab-2" class="tab-content">
+                    <div id="general-box">
+                        <h2>projects</h2>
+                        <p>
+                            my main account is eternal, the other accounts are
+                            starblazing and can't even.
+                        </p>
+                        <p><strong>eternal</strong> is jersey club.</p>
+                        <p>
+                            <strong>starblazing</strong> is throwaways/archived
+                            stuff and the name i go by when i make drumkits.
+                        </p>
+                        <p>
+                            <strong>can't even</strong> is a general beat
+                            account.
+                        </p>
+                    </div>
+                    <div id="about-me">
+                        <h2>john grits</h2>
+                        <p>
+                            COLOSSEUM has a pretty cool bot called yap bot, and
+                            i was inspired by the premise of it. i decided to do
+                            something like that.
+                        </p>
+                        <p>a collab management bot for the masses.</p>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div id="general-box">
+                        <h2>technologies</h2>
+                        <p>
+                            as i said in the about section, i primarily use
+                            python to code all sorts of stuff. believe me or
+                            not, i started as a script kiddie coding harmless
+                            viruses in VBS and Batch code. now i primarily try
+                            to do some automation scripts, bots and all cool
+                            stuff!
+                            <br />
+                            <br />
+                            my first automation script was a patcher script,
+                            that downloaded a specific update file from Steam,
+                            that allowed the use of the Steam Deck UI, back when
+                            it wasn't added to Big Picture mode.
+                            <br />
+                            <br />
+                            i'm fluent in using linux. ah yes, i'm an arch user
+                            btw!
+                            <br />
+                            <br />
+                            <strong>fun fact</strong>: john grits is hosted on a
+                            linux server!
+                        </p>
+                    </div>
+                </div>
+
+                <div id="tab-4" class="tab-content">
+                    <div id="general-box">
+                        <h2>music</h2>
+                        <p>
+                            music has been my entire life as long as i can
+                            remember, and i love producing! here is the best
+                            track i ever made!
+                            <br />
+                            <br />
+                        </p>
+                        <iframe
+                            width="100%"
+                            height="300"
+                            scrolling="yes"
+                            frameborder="yes"
+                            allow="autoplay"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1950395411&color=%238d8d8d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                        ></iframe>
+                        <div
+                            style="
+                                font-size: 10px;
+                                color: #cccccc;
+                                line-break: anywhere;
+                                word-break: normal;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                font-family:
+                                    Interstate,
+                                    Lucida Grande,
+                                    Lucida Sans Unicode,
+                                    Lucida Sans,
+                                    Garuda,
+                                    Verdana,
+                                    Tahoma,
+                                    sans-serif;
+                                font-weight: 100;
+                            "
+                        >
+                            <a
+                                href="https://soundcloud.com/ljbind"
+                                title="eternal"
+                                target="_blank"
+                                style="color: #cccccc; text-decoration: none"
+                                >eternal</a
+                            >
+                            ·
+                            <a
+                                href="https://soundcloud.com/ljbind/eternal"
+                                title="holdup @eternal (pfkit Promo)"
+                                target="_blank"
+                                style="color: #cccccc; text-decoration: none"
+                                >holdup @eternal (pfkit Promo)</a
+                            >
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-5" class="tab-content">
+                        <div id="general-box">
+                            <h2>fun facts!</h2>
+                            <p>
+                                1. i genuinely hate dm promos, don't do that please. 🖤
+                                <br>
+                                <br>
+                                2. i'm polish!
+                                <br>
+                                <br>
+                                3. i installed gentoo linux one time, never again.
+                                <br>
+                                <br>
+                                4. i like tinkering with hackintoshes (1 time was successful, don't have that laptop, given it to my older brother.)
+                                <br>
+                                <br>
+                                5. i'm interested in game glitches (mainly the source engine ones.)
+                                <br>
+                                <br>
+                                6. i'm 15.
+                        </div>
+                    </div>
+                    <div id="tab-6" class="tab-content">
+                        <div id="general-box">
+                            <h2>socials!</h2>
+
+                            <ul class="social-links">
+                                <li><a href="https://open.spotify.com/artist/0gIDHPEFptsu1rApQ4Wz4r" target="_blank"><i class="fab fa-spotify"></i> Spotify</a></li>
+                                <li><a href="https://www.soundcloud.com/ljbind" target="_blank"><i class="fab fa-soundcloud"></i> SoundCloud</a></li>
+                                <li><a href="https://www.steamcommunity.com/id/sonychorus" target="_blank"><i class="fab fa-steam"></i> Steam</a></li>
+                                <li><a href="https://www.instagram.com/thoublaze" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- container -->
+            </div>
+        </div>
+        <!-- partial -->
+        <script src="./script.js"></script>
+    </body>
+</html>
