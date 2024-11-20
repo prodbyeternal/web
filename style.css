@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Planet Kosmos"; /* Define the font family */
-    src: url("font/kosmos.TTF") format("truetype"); /* Specify the font file location */
+    src: url("kosmos.TTF") format("truetype"); /* Specify the font file location */
     font-weight: normal;
     font-style: normal;
 }
@@ -248,7 +248,7 @@ ul.tabs li.current {
 .name {
     font-size: 3rem;
     font-family: "Planet Kosmos";
-    src: url("font/kosmos.TTF") format("ttf");
+    src: url("kosmos.TTF") format("ttf");
     color: #fff;
     position: absolute; /* Stack names in the same space */
     opacity: 0;
