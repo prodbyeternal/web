@@ -40,7 +40,46 @@ body {
     z-index: 0;
     position: fixed;
     text-decoration: none;
+    cursor: url(frame1.gif), auto;
+    animation: cursor 1s linear infinite;
 }
+
+@keyframes cursor{
+    0% {
+        cursor: url(frame1.gif), auto;
+    }
+    10% {
+        cursor: url(frame2.gif), auto;
+    }
+    20% {
+        cursor: url(frame3.gif), auto;
+    }
+    30% {
+        cursor: url(frame4.gif), auto;
+    }
+    40% {
+        cursor: url(frame5.gif), auto;
+    }
+    50% {
+        cursor: url(frame6.gif), auto;
+    }
+    60% {
+        cursor: url(frame7.gif), auto;
+    }
+    70% {
+        cursor: url(frame8.gif), auto;
+    }
+    80% {
+        cursor: url(frame9.gif), auto;
+    }
+    90% {
+        cursor: url(frame10.gif), auto;
+    }
+    100% {
+        cursor: url(frame1.gif), auto;
+    }
+}
+        
 
 /* Dim overlay */
 body::before {
