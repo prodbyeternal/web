@@ -70,9 +70,9 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 660px;
-    height: 610px;
+    height: 613px;
     min-width: 660px;
-    min-height: 540px;
+    min-height: 541px;
     max-width: 1300px;
     max-height: 800px;
     animation: 5s show ease-in;
