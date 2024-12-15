@@ -83,7 +83,7 @@ body::before {
 }
 
 .line {
-    background: linear-gradient(100deg, #45aaf2, #fc5c65, #fed330);
+    background: linear-gradient(100deg, #add8e6, #1e90ff, #00008b);
     background-size: 100% 100%;
 
     width: auto;
