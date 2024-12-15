@@ -34,9 +34,9 @@ body {
     height: 100%;
     background-color: #000;
     background-position: center;
+    background: url("https://i.pinimg.com/originals/f2/a2/e3/f2a2e361b63715e50d9bb74a49bcf277.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    background: url("https://i.pinimg.com/originals/f2/a2/e3/f2a2e361b63715e50d9bb74a49bcf277.gif");
     z-index: 0;
     position: fixed;
     text-decoration: none;
@@ -70,9 +70,9 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 660px;
-    height: 617px;
+    height: 610px;
     min-width: 660px;
-    min-height: 545px;
+    min-height: 540px;
     max-width: 1300px;
     max-height: 800px;
     animation: 5s show ease-in;
