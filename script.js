@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var names = ["eternal", "starblazing", "can't even"];
+  var names = ["eternal", "starblazing"];
   var currentIndex = 0;
 
   // Function to handle name change with fade in/out animations
