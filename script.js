@@ -1,7 +1,4 @@
-
-
 $(document).ready(function () {
-  // Tab click handler for switching between tabs
   $("ul.tabs li").click(function () {
     var tab_id = $(this).attr("data-tab");
 
@@ -41,7 +38,7 @@ const mutable = function (e) {
   const unfollow = (e) => {
     document.removeEventListener("mousemove", follow);
     document.removeEventListener("mouseup", unfollow);
-    // Emit events according to interaction
+
     if (hasMoved(e)) this.dispatchEvent(new Event(""));
     e.preventDefault();
   };
@@ -64,5 +61,5 @@ $elem.addEventListener("moved");
 $elem.addEventListener("resized");
 
 $(document).ready(function () {
-  $("#tab-1").fadeIn(1500); // Fade in the first tab on page load
+  $("#tab-1").fadeIn(1500); 
 });
