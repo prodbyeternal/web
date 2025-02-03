@@ -290,12 +290,10 @@ ul.tabs li.current {
     src: url("kosmos.TTF") format("ttf");
     color: #fff;
     position: absolute; /* Stack names in the same space */
-    opacity: 0;
-    visibility: hidden;
+    opacity: 100%;
     width: 100%;
     text-align: center;
     margin: 0;
-    animation: fadeInOut 15s infinite; /* 15s total time for each cycle */
 }
 
 .name:nth-child(1) {
