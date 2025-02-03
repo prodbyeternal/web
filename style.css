@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: "Planet Kosmos"; /* Define the font family */
-    src: url("kosmos.TTF") format("truetype"); /* Specify the font file location */
+    font-family: "Planet Kosmos"; 
+    src: url("kosmos.TTF") format("truetype"); 
     font-weight: normal;
     font-style: normal;
 }
@@ -89,14 +89,14 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black to dim the GIF */
-    z-index: -1; /* Ensure it stays behind the content */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
 
 /* Content on top */
 .content {
     position: relative;
-    z-index: 1; /* Ensures content stays on top of the background */
+    z-index: 1; 
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -272,7 +272,7 @@ ul.tabs li.current {
     color: #fff;
     padding: 85px;
     text-align: center;
-    overflow: hidden; /* Ensure nothing spills out */
+    overflow: hidden; 
     height: 300px; 
 }
 
@@ -281,7 +281,7 @@ ul.tabs li.current {
     width: 100%;
     height: 100px; 
     text-align: center;
-    overflow: hidden; /* Prevent names from overlapping */
+    overflow: hidden; 
 }
 
 .name {
@@ -289,7 +289,7 @@ ul.tabs li.current {
     font-family: "Planet Kosmos";
     src: url("kosmos.TTF") format("ttf");
     color: #fff;
-    position: absolute; /* Stack names in the same space */
+    position: absolute; 
     opacity: 100%;
     width: 100%;
     text-align: center;
@@ -301,17 +301,17 @@ ul.tabs li.current {
 }
 
 .name:nth-child(2) {
-    animation-delay: 5s; /* Delay for the second name to start */
+    animation-delay: 5s; 
 }
 
 .name:nth-child(3) {
-    animation-delay: 10s; /* Delay for the third name to start */
+    animation-delay: 10s; 
 }
 
 
 /* About Me section */
 #about-me {
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     border-radius: 10px;
     text-align: center;
