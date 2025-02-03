@@ -1,26 +1,4 @@
-$(document).ready(function () {
-  var names = ["eternal", "starblazing"];
-  var currentIndex = 0;
 
-  // Function to handle name change with fade in/out animations
-  function changeName() {
-    $("#name").fadeOut(500, function () {
-      // Change the name text
-      $("#name").text(names[currentIndex]);
-      // Fade it back in
-      $("#name").fadeIn(500);
-    });
-
-    // Move to the next name in the array
-    currentIndex = (currentIndex + 1) % names.length;
-  }
-
-  // Set an interval to change the name every 2 seconds
-  setInterval(changeName, 2000);
-
-  // Initial fade-in for the first name
-  $("#name").fadeIn(1000);
-});
 
 $(document).ready(function () {
   // Tab click handler for switching between tabs
