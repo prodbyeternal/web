@@ -310,29 +310,6 @@ ul.tabs li.current {
     animation-delay: 10s; /* Delay for the third name to start */
 }
 
-/* Define the fade in and out animation */
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    10% {
-        opacity: 1;
-        visibility: visible;
-    }
-    30% {
-        opacity: 1;
-        visibility: visible;
-    }
-    40% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
 
 /* About Me section */
 #about-me {
