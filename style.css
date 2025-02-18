@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(./mainbg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: fixed;
+    text-decoration: none;
+    font-size: 20px;
+
+    font-family: "Josefin Sans";
+}
+
+
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#fogging {
+    background: rgba(50, 84, 136, 0.389);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: show 2s;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 10;
+    }
+}
+
+#menu {
+    border-radius: 15px;
+    position: fixed;
+    inset: 0px;
+    width: 12rem;
+    height: 5rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    z-index: 2;
+    background-color: #2d3739;
+    border: 1.2px solid #202020;
+    background: url(./bg.png);
+    background-size: 200%, 200%;
+
+    overflow: hidden;
+    width: 800px;
+    height: 652px;
+    opacity: 10;
+}
+
+#bar {
+    width: auto;
+    height: 75px;
+    background: linear-gradient(80deg, #152639, #1b3346);
+    box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#line {
+    top: 15px;
+    position: relative;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(90deg, #4632f0, #0597eb);
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        filter: brightness(70%);
+    }
+    50% {
+        filter: brightness(100%);
+    }
+}
+
+#logo {
+    color: #fff;
+    font-size: 11px;
+    position: relative;
+    top: 35px;
+    left: 18px;
+    letter-spacing: 2px;
+    animation: glitch 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.9399999999999999)
+        both infinite;
+    font-weight: 700;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: none;
+    }
+    25% {
+        text-shadow:
+            -1.5px -1.5px 0 #0597eb,
+            1.5px 1.5px 0 #4632f0;
+    }
+    50% {
+        text-shadow:
+            1.5px -1.5px 0 #0542eb,
+            -1.5px 1.5px 0 #4632f0;
+    }
+    75% {
+        text-shadow:
+            -1.5px 1.5px 0 #4205eb,
+            1.5px -1.5px 0 #4632f0;
+    }
+    100% {
+        text-shadow:
+            1.5px 1.5px 0 #05aaeb,
+            -1.5px -1.5px 0 #4632f0;
+    }
+}
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    top: 15px;
+    left: 160px;
+    text-transform: uppercase;
+}
+
+ul.tabs li {
+    background: none;
+    color: #64728c;
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: "Josefin Sans";
+    font-weight: 500;
+}
+
+ul.tabs li.current {
+    color: rgb(255, 255, 255);
+    transition: 200ms;
+}
+
+ul.tabs li {
+    color: #64768c;
+    transition: 200ms;
+}
+
+ul.tabs li:hover {
+    animation: glitch 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.9399999999999999)
+        both infinite;
+    color: #fff;
+}
+
+ul.tabs li {
+    display: inline;
+    position: relative;
+}
+ul.tabs li:hover:after,
+ul.tabs li:focus:after,
+ul.tabs li:active:after,
+ul.tabs li.current:after {
+    width: 100%;
+}
+ul.tabs li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: #0542eb;
+    transition: 0.2s;
+    border-radius: px;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 7;
+        left: 0;
+    }
+}
+
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    height: 9px;
+    width: 9px;
+    background: #19153f;
+    border: 1px solid #463f6a;
+
+    transition: 200ms;
+}
+
+.control {
+    display: block;
+    position: relative;
+    margin-bottom: 7px;
+    margin-left: 0px;
+    padding-top: 2px;
+    color: white;
+    font-size: 10px;
+    margin-left: 27px;
+}
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #19153f;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #eb055a;
+    border: 1px solid #eb055a;
+}
+
+.control input:hover ~ .control_indicator {
+    border: 1px solid #eb055a;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #eb055a;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: "";
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+fieldset {
+    position: relative;
+    font-family: "Josefin Sans";
+    font-size: 10px;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+    border-style: solid;
+    border-width: 1px;
+    background: #192f42;
+    border: 1px solid #3f526a;
+    margin: 15 15 15 27;
+
+    float: left;
+}
+
+legend {
+    margin-left: 10px;
+    font-family: "Josefin Sans";
+    font-size: 10px;
+}
+
+#inside {
+    background: #142637;
+    width: auto;
+    position: relative;
+    align-items: center;
+    margin-inline: auto;
+    top: -18px;
+    height: 270px;
+    border: 1px solid #3f476a;  
+    text-align: center;
+    padding: 130px 0;
+}
+
+.tab-content {
+    display: none;
+
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    top: 50px;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
+.ui-slider-range {
+    height: 10px;
+    background: #eb055a;
+    position: relative;
+    transition: 50ms ease;
+}
+
+.range {
+    width: 180px;
+    height: 10px;
+    border: 0;
+    position: relative;
+    border: 1px solid #463f6a;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: ease-in-out 200ms;
+}
+
+.range:hover,
+.range:active {
+    border: 1px solid #eb055a;
+}
+
+.ui-slider-handle {
+    color: #fff;
+    text-align: center;
+    outline: none;
+
+    margin-right: 50%;
+    float: right;
+    font-family: "Josefin Sans";
+}
